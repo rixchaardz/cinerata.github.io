@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cinerata - Filmes, Séries e Animes</title>
+    <link rel="stylesheet" href="../css/player.css">
+    <script src="https://kit.fontawesome.com/7c7a7eee63.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header id="barra">
+        <nav class="flex">
+            <div id="links-secoes">
+                <a href="./index.html">Home</a>
+                <a href="#" style="border-bottom: 2px solid #FFC700;">Filmes</a>
+                <a href="#">Séries</a>
+            </div>
+            <div id="acessivel" class="flex">
+
+                <div class="search">
+                    <input id="pesquisa" type="text" placeholder="Pesquise um filme...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <p id="welcome">Bem vindo, <br> Anônimo</p>
+
+                <i id="profile_pic" class="fa-solid fa-circle-user"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sec_player">
+        <div class="flex_desc">
+            <div>
+                <img id="posterHA" src="../img/ST.png">
+            </div>
+            <div id="desc_ST">
+                <h3> Spider-Man: No Way Home</h3>
+                <p>⭐⭐⭐⭐⭐ <span style="color:#14FF00">• 98% </span> 2021 <i class="fa-regular fa-address-card"></i></p>
+                <br>
+                <p>Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências
+                    da sua identidade como o herói mais querido do mundo após ter sido revelada pela reportagem do
+                    Clarim Diário, com uma gravação feita por Mysterio (Jake Gyllenhaal) no filme anterior.</p>
+            </div>
+        </div>
+        <div>   
+            <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>  
+
+<script> 
+const chk = document.getElementById('chk');
+
+    chk.addEventListener('change', () => {
+        document.body.classList.toggle('dark');
+    });
+    </script>
+
+    <div class="flex_player">
+        <div class="flex_desc"><iframe id="player" width="1300" height="500"
+                src="https://www.youtube.com/embed/CyiiEJRZjSU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+        <!-- <i class="fa-regular fa-circle-play" style="color: white; font-size: 60px; opacity: 0.7; cursor: pointer;"></i> -->
+        
+
+        <div id="comments">
+            <h3>Comentários:</h3>
+            <div class="caixas_comment"><i class="fa-solid fa-user" style="color: greenyellow;"></i><span style="font-weight: bold;">EVA:</span> Melhor série!</div>
+            <div class="caixas_comment"><i class="fa-solid fa-user" style="color: red;"></i><span style="font-weight: bold;">Wall.E:</span> Muito bom!</div>
+            <div class="caixas_comment"><i class="fa-solid fa-user" style="color: yellow;"></i><span style="font-weight: bold;">BURN.E:</span> Quando saí novos episódios?</div>
+            <div class="caixas_comment"><i class="fa-solid fa-user" style="color: #FF00A8;"></i><span style="font-weight: bold;">Stranger:</span> Maravilha!</div>
+            <div class="caixas_comment"><i class="fa-solid fa-user" style="color: blue;"></i><span style="font-weight: bold;">Visitor:</span> Odiei, horrível, não recomendo pra vocês!</div>
+        </div>
+    </div>
+
+
+
+
+        <div id="div_btns">
+            <button onclick="mudarFilme1()" class="btns_player">SD</button>
+            <button onclick="mudarFilme2()" class="btns_player" >HD</button>
+            <button class="btns_player" style="background-color: #2C9E89;"><i download="Spider-Man No Way Home.mp4" href="https://rr2---sn-8xavnuxgoxucg-bg0e.googlevideo.com/videoplayback?expire=1647479781&ei=hTcyYqWXDauB-LAPgsqIYA&ip=170.81.201.70&id=o-AJkqFQnoavOchyvrde8sJoCuyf7dBJ4hbCWRjrfs1NaY&itag=22&source=youtube&requiressl=yes&mh=6y&mm=31%2C29&mn=sn-8xavnuxgoxucg-bg0e%2Csn-pmcg-bg0l&ms=au%2Crdu&mv=m&mvi=2&pl=26&initcwndbps=721250&vprv=1&mime=video%2Fmp4&ns=PlmOU9HCZkn_hdxn-IHSaiwG&cnr=14&ratebypass=yes&dur=173.290&lmt=1637115401451553&mt=1647457745&fvip=4&fexp=24001373%2C24007246&c=WEB&txp=5535432&n=sdGXlss7Rsl_ng&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIhALFh82PO7zwP-XfTHN30J7xl5T0wg_T-0Spj2BnpLTCWAiBLnq_z1fJPoyqyYiYMF64RzV04Kzr_9M-tS7v3o7qQbw%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgUxouR64FhIJmIOKTnAxSMnqcLpUiiUcWMunw60jr_nMCIQCUERW6Gc7-6q9VZCrvBQyJCooQQa3oqz294behBvn_JQ%3D%3D" class="fa-solid fa-circle-down"></i></button>
+          
+            </div>
+        </div>
+
+<script language="javascript" type="text/javascript"> 
+function mudarFilme1(){
+
+document.getElementById("player").src = "https://www.youtube.com/embed/CxMlogs0Z9M"
+}
+
+function mudarFilme2(){
+
+document.getElementById("player").src = "https://www.youtube.com/embed/CyiiEJRZjSU"
+}
+
+
+
+</script>
+
+
+    </section>
+
+    <footer>
+
+        <div>&copy; PirateCorporation&trade;</div>
+
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+
+
+    </footer>
+
+    
+</body>
+
+</html>

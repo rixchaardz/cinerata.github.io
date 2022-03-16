@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinerata - Filmes, Séries e Animes</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../vendor/glider/glider.css" />
+  <script src="https://kit.fontawesome.com/7c7a7eee63.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header id="barra">
+    <nav class="flex">
+      <a onclick="location.reload()">
+        <h3 id="logo">CINERATA</h3>
+      </a>
+      <div id="links-secoes">
+        <a href="./série.html">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Animes</a>
+      </div>
+      <div id="acessivel" class="flex">
+        <div class="search">
+          <input id="pesquisa" type="text" placeholder="Pesquise um filme..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <p id="welcome">
+          Bem vindo, <br />
+          Anônimo
+        </p>
+
+        <i id="profile_pic" class="fa-solid fa-circle-user"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="wrapper">
+    <div id="film_dest">
+      <h2 id="tdest">Homem-Aranha: Sem Volta Para Casa</h2>
+      <div id="stars">⭐⭐⭐⭐⭐</div>
+      <p id="desc_filmdest">
+        Peter Parker é desmascarado e não consegue mais separar sua vida
+        normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda
+        ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o
+        forçam a descobrir o que realmente significa ser o Homem-Aranha.
+      </p>
+    </div>
+    <div id="botoes">
+      <form id="watch_btn1" style="display: flex;" action="./player.html"><button id="watch_btn"><i
+            class="fa-solid fa-play"></i> Assistir </button></form>
+      <button id="save_btn">
+        <i class="fa-solid fa-bookmark"></i> Salvar
+      </button>
+    </div>
+
+    <section id="filmes_assistidos">
+
+      <h3>Continue de onde você parou:</h3>
+
+      <div id="div_assistidos">
+        <div id="afilme1" class="div_filme">
+          <input class="visto" type="range" value="89" min="0" max="100" disabled />
+        </div>
+
+        <div id="afilme2" class="div_filme">
+          <input class="visto" type="range" value="50" min="0" max="100" disabled />
+        </div>
+
+        <div id="afilme3" class="div_filme">
+          <input class="visto" type="range" value="12" min="0" max="100" disabled />
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="filmes_recomendados">
+      <h3>Recomendações:</h3>
+      <div class="glider-contain">
+
+        <div class="glider">
+          <img class="filmes1" src="../img/b99.jpg">
+          <img class="filmes1" src="../img/lucifer.jpg">
+          <img class="filmes1" src="../img/nemo.jpg">
+          <img class="filmes1" src="../img/valente.jpg">
+          <img class="filmes1" src="../img/carros.jpg">
+          <img class="filmes1" src="../img/pulp.jpg">
+          <img class="filmes1" src="../img/interestelar.jpg">
+        </div>
+
+        <button aria-label="Previous" class="glider-prev"><i class="fa-solid fa-circle-arrow-left"></i></button>
+        <button aria-label="Next" class="glider-next"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        <div role="tablist" class="dots"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+    <div>&copy; PirateCorporation&trade;</div>
+
+    <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</footer>
+</body>
+<script src="../vendor/glider/glider.js"></script>
+<script src="../carrosel/carrosel.js"></script>
+
+</html>
